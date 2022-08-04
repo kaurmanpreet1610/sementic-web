@@ -1,0 +1,2285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.pharmacologyexample.com#"
+     xml:base="http://www.pharmacologyexample.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:onto="http://www.pharmacology.com/onto#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Pharmacology="http://localhost:8080/Pharmacology#">
+    <owl:Ontology rdf:about="http://www.pharmacology.com/onto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsContain -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsContain">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsDiagnosedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsDiagnosedBy">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsHaving -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsHaving">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsManufactureBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsManufactureBy">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsTreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsTreatedBy">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#AEROSOL"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#AUGMENTED"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#CAPSULE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#CHEWABLE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#CREAM"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DELAYEDRELEASE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DISC"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DISPERSIBLE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DRESSING"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DROPS"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#EFFERVESCENT"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#ELIXIR"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#EMULSION"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#ENEMA"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#EXTENDEDRELEASE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#FIBER"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#FILM"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#FOAM"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#GAS"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#GEL"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#GRANULE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#GUM"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#IMPLANT"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#INHALANT"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#INJECTABLE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#INTRAUTERINEDEVICE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#JELLY"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#LIPOSOMAL"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#LIQUID"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#LOTION"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#METERED"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#OIL"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#OINTMENT"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#ORALLYDISINTEGRATING"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#PASTE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#PASTILLE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#PATCH"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#PELLET"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#PELLETS"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#POWDER"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#RING"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SHAMPOO"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SOAP"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SOLUTION"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SOLUTIONFORSLUSH"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SPONGE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SPRAY"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SUPPOSITORY"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SUSPENSION"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SWAB"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SYRINGE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SYRUP"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#TAMPON"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#TAPE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#TROCHE"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#VIAL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsTypeOf">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Allergies"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Alzheimer"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Arthritis"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Asthma"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#BloodPressure"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Cancer"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Cholesterol"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#ChronicPain"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Depression"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Diabetes"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Dictionary"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Digestion"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#HIVAIDS"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#HealthyKids"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Heart"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#InfectiousDisease"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#LungConditions"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Medications"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#MenHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Menopause"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#MentalHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Migraine"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Neurology"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#OralHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Pregnancy"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#SeniorHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#SexualHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Skin"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Sleep"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Thyroid"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#TravelHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#WomenHealth"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Cold&amp;Flu"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Health&amp;Living"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Hearing&amp;Ear"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#DrugType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IsUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#IsUsedIn">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#TreatedBy"/>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#genderType -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#genderType">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#hasAgeRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#hasAgeRange">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#hasDose -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#hasDose">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#hasRating">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#hasSymptom"/>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#isSufferingBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#isSufferingBy">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Allergies"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Alzheimer"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Arthritis"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Asthma"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#BloodPressure"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Cancer"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Cholesterol"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#ChronicPain"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Depression"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Diabetes"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Dictionary"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Digestion"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#HIVAIDS"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#HealthyKids"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Heart"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#InfectiousDisease"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#LungConditions"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Medications"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#MenHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Menopause"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#MentalHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Migraine"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Neurology"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#OralHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Pregnancy"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SeniorHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#SexualHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Skin"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Sleep"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Thyroid"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#TravelHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#WomenHealth"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Cold&amp;Flu"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Health&amp;Living"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Hearing&amp;Ear"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#sales -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#sales">
+        <owl:inverseOf rdf:resource="http://www.pharmacology.com/onto#salesIn"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#salesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmacology.com/onto#salesIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#Description">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Content"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DieseaseId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DieseaseId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DiseaseLatinName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DiseaseLatinName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DiseaseShortName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DiseaseShortName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DoseAmout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DoseAmout">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DoseId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DoseId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DoseShortName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DoseShortName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DrugId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DrugName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugTypeId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DrugTypeId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#DrugType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugTypeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#DrugTypeName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#DrugType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#GenderName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#GenderName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ManufacturerId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#ManufacturerId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ManufacturerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#ManufacturerName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PharmacyId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#PharmacyId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PharmacyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#PharmacyName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SymptomId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#SymptomId">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SymptomName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#SymptomName">
+        <rdfs:domain rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#hasAgeRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmacology.com/onto#hasAgeRange">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmacology.com/onto#AEROSOL -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#AEROSOL">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#AUGMENTED -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#AUGMENTED">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Adult -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Adult">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Allergies -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Allergies">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Alzheimer -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Alzheimer">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Arthritis -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Arthritis">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Asthma -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Asthma">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Bestrating -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Bestrating">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#BloodPressure -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#BloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#CAPSULE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#CAPSULE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#CHEWABLE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#CHEWABLE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#CREAM -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#CREAM">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Cancer -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Cancer">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#CarrintonPharmacy -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#CarrintonPharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Cholesterol -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Cholesterol">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ChronicPain -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#ChronicPain">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Content -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Content">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:comment xml:lang="en">Drug is contain specific content.</rdfs:comment>
+        <rdfs:label xml:lang="en">Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DELAYEDRELEASE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DELAYEDRELEASE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DISC -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DISC">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DISPERSIBLE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DISPERSIBLE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DRESSING -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DRESSING">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DROPS -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DROPS">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Depression -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Depression">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Diabetes -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Dictionary -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Dictionary">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Digestion -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Digestion">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Disease">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pharmacology.com/onto#Disease"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.pharmacology.com/onto#IsDiagnosedBy"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Dose -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Dose">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:comment xml:lang="en">Dose is in gra, ml  etc</rdfs:comment>
+        <rdfs:label xml:lang="en">Dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Drug -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Drug">
+        <owl:equivalentClass rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+        <rdfs:comment xml:lang="en">Drug or Medicine For example Crossine</rdfs:comment>
+        <rdfs:label xml:lang="en">Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugManufacturer -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DrugManufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:comment xml:lang="en">Drug manufacturer means company name or brand name</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"></rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">DrugManufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrugType -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#DrugType">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdfs:comment xml:lang="en">Drug Type or category like generic drug</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">DrugType</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#EFFERVESCENT -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#EFFERVESCENT">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ELIXIR -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#ELIXIR">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#EMULSION -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#EMULSION">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ENEMA -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#ENEMA">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#EXTENDEDRELEASE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#EXTENDEDRELEASE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Eyesight -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Eyesight">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#FIBER -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#FIBER">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#FILM -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#FILM">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#FOAM -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#FOAM">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#GAS -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#GAS">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#GEL -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#GEL">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#GRANULE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#GRANULE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#GUM -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#GUM">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Gender -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Gender">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#HIVAIDS -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#HIVAIDS">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#HealthyKids -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#HealthyKids">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Heart -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Heart">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#IMPLANT -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#IMPLANT">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#INHALANT -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#INHALANT">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#INJECTABLE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#INJECTABLE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#INTRAUTERINEDEVICE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#INTRAUTERINEDEVICE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#InfectiousDisease -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#InfectiousDisease">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#JELLY -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#JELLY">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#LIPOSOMAL -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#LIPOSOMAL">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#LIQUID -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#LIQUID">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#LOTION -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#LOTION">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#LungConditions -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#LungConditions">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#METERED -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#METERED">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#MediCarePharma -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#MediCarePharma">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Medications -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Medications">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Medicine -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Medicine">
+        <rdfs:isDefinedBy xml:lang="en">Medicine or Drug like DIO1</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#MenHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#MenHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Menopause -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Menopause">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#MentalHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#MentalHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Migraine -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Migraine">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Neurology -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Neurology">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#OIL -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#OIL">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#OINTMENT -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#OINTMENT">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#ORALLYDISINTEGRATING -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#ORALLYDISINTEGRATING">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#OralHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#OralHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PASTE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#PASTE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PASTILLE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#PASTILLE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PATCH -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#PATCH">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PELLET -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#PELLET">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#PELLETS -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#PELLETS">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#POWDER -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#POWDER">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Pharmacy -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Pharmacy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Pregnancy -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Pregnancy">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#RING -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#RING">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Review -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Review">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SHAMPOO -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SHAMPOO">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SOAP -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SOAP">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SOLUTION -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SOLUTION">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SOLUTIONFORSLUSH -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SOLUTIONFORSLUSH">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SPONGE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SPONGE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SPRAY -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SPRAY">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SUPPOSITORY -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SUPPOSITORY">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SUSPENSION -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SUSPENSION">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SWAB -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SWAB">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SYRINGE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SYRINGE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SYRUP -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SYRUP">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SeniorHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SeniorHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SexualHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#SexualHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Skin -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Skin">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Sleep -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Sleep">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Symptom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pharmacology.com/onto#Symptom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.pharmacology.com/onto#IsTreatedBy"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Symptom like cold, fever, cough and many more.</rdfs:comment>
+        <rdfs:label xml:lang="en">Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TABLET -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#TABLET">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TAMPON -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#TAMPON">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TAPE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#TAPE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TROCHE -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#TROCHE">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Teenager -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Teenager">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Thyroid -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Thyroid">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TravelHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#TravelHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#VIAL -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#VIAL">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#WomenHealth -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#WomenHealth">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#coughing -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#coughing">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#fever -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#fever">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#shortsightedness -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#shortsightedness">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#vomiting -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#vomiting">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Cold&amp;Flu -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Cold&amp;Flu">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Health&amp;Living -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Health&amp;Living">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Hearing&amp;Ear -->
+
+    <owl:Class rdf:about="http://www.pharmacology.com/onto#Hearing&amp;Ear">
+        <rdfs:subClassOf rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.pharmacology.com/onto#isSufferingBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Adult -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Adult"/>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Akilos_p -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Akilos_p">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <onto:DrugId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</onto:DrugId>
+        <onto:DrugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akilos-p</onto:DrugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Aspirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Aspirin">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Brufen -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Brufen">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <onto:IsUsedIn rdf:resource="http://www.pharmacology.com/onto#Symptom3"/>
+        <onto:hasRating rdf:resource="http://www.pharmacology.com/onto#3Rating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Cancer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Cancer1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Cancer"/>
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom5"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom6"/>
+        <onto:salesIn rdf:resource="http://www.pharmacology.com/onto#MediCarePharma"/>
+        <onto:DieseaseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</onto:DieseaseId>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer</onto:DiseaseLatinName>
+        <onto:DiseaseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CNR</onto:DiseaseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#CarrintonPharmacy -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#CarrintonPharmacy">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <onto:sales rdf:resource="http://www.pharmacology.com/onto#Cetrizine"/>
+        <onto:sales rdf:resource="http://www.pharmacology.com/onto#Paracetamol"/>
+        <onto:sales rdf:resource="http://www.pharmacology.com/onto#SYRUP_Benadryl"/>
+        <onto:PharmacyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:PharmacyId>
+        <onto:PharmacyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CarritonPharmacy</onto:PharmacyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Cetrizine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Cetrizine">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <onto:DrugId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:DrugId>
+        <onto:DrugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cetrizine</onto:DrugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Child -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Child"/>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#DM1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <onto:ManufacturerId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:ManufacturerId>
+        <onto:ManufacturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zydus</onto:ManufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DM2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#DM2">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <onto:ManufacturerId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:ManufacturerId>
+        <onto:ManufacturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sun Pharma</onto:ManufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DM3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#DM3">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <onto:ManufacturerId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</onto:ManufacturerId>
+        <onto:ManufacturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mankind</onto:ManufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DM4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#DM4">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#DrugManufacturer"/>
+        <onto:ManufacturerId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</onto:ManufacturerId>
+        <onto:ManufacturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkon</onto:ManufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Disease1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom2"/>
+        <onto:DieseaseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:DieseaseId>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuberculosis</onto:DiseaseLatinName>
+        <onto:DiseaseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TB</onto:DiseaseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Disease2">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom3"/>
+        <onto:DieseaseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:DieseaseId>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hyper Tension</onto:DiseaseLatinName>
+        <onto:DiseaseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT</onto:DiseaseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Disease3">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom3"/>
+        <onto:DieseaseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</onto:DieseaseId>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetis Melitus</onto:DiseaseLatinName>
+        <onto:DiseaseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</onto:DiseaseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Disease4">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsDiagnosedBy rdf:resource="http://www.pharmacology.com/onto#Symptom1"/>
+        <onto:DieseaseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</onto:DieseaseId>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tyfoid</onto:DiseaseLatinName>
+        <onto:DiseaseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TY</onto:DiseaseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Disease5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Disease5">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:hasSymptom rdf:resource="http://www.pharmacology.com/onto#DrySkin"/>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infection</onto:DiseaseLatinName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Dose1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Dose1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <onto:DoseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:DoseId>
+        <onto:DoseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ml</onto:DoseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Dose2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Dose2">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <onto:DoseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:DoseId>
+        <onto:DoseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg</onto:DoseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Dose3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Dose3">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Dose"/>
+        <onto:DoseId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</onto:DoseId>
+        <onto:DoseShortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg</onto:DoseShortName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Doxil -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Doxil">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <onto:IsUsedIn rdf:resource="http://www.pharmacology.com/onto#Cancer1"/>
+        <onto:hasRating rdf:resource="http://www.pharmacology.com/onto#5Rating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#DrySkin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#DrySkin">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:hasSymptom rdf:resource="http://www.pharmacology.com/onto#DrySkin"/>
+        <onto:DiseaseLatinName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer</onto:DiseaseLatinName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#EyeDeficiency -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#EyeDeficiency">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+        <onto:IsTypeOf rdf:resource="http://www.pharmacology.com/onto#EyeDeficiency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Female">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Gender"/>
+        <onto:GenderName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</onto:GenderName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Leon -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Leon">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <onto:DrugId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</onto:DrugId>
+        <onto:DrugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leon</onto:DrugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Male">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Gender"/>
+        <onto:GenderName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</onto:GenderName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#MediCarePharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#MediCarePharma">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <onto:sales rdf:resource="http://www.pharmacology.com/onto#Doxil"/>
+        <onto:PharmacyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:PharmacyId>
+        <onto:PharmacyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediCarePharma</onto:PharmacyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Medicine1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Medicine1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Medicine"/>
+        <onto:DrugId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:DrugId>
+        <onto:DrugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dio1</onto:DrugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Paracetamol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Paracetamol">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Drug"/>
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <onto:IsUsedIn rdf:resource="http://www.pharmacology.com/onto#Symptom1"/>
+        <onto:hasAgeRange rdf:resource="http://www.pharmacology.com/onto#Adult"/>
+        <onto:hasAgeRange rdf:resource="http://www.pharmacology.com/onto#Child"/>
+        <onto:hasAgeRange rdf:resource="http://www.pharmacology.com/onto#Teenager"/>
+        <onto:hasRating rdf:resource="http://www.pharmacology.com/onto#5Rating"/>
+        <onto:salesIn rdf:resource="http://www.pharmacology.com/onto#CarrintonPharmacy"/>
+        <onto:DrugId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:DrugId>
+        <onto:DrugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paracetamol</onto:DrugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Person1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onto:genderType rdf:resource="http://www.pharmacology.com/onto#Male"/>
+        <onto:hasDose rdf:resource="http://www.pharmacology.com/onto#Dose1"/>
+        <onto:isSufferingBy rdf:resource="http://www.pharmacology.com/onto#Disease1"/>
+        <onto:DoseAmout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</onto:DoseAmout>
+        <onto:hasAgeRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</onto:hasAgeRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Person2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Person2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onto:genderType rdf:resource="http://www.pharmacology.com/onto#Female"/>
+        <onto:hasDose rdf:resource="http://www.pharmacology.com/onto#Dose2"/>
+        <onto:isSufferingBy rdf:resource="http://www.pharmacology.com/onto#Disease4"/>
+        <onto:DoseAmout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</onto:DoseAmout>
+        <onto:hasAgeRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</onto:hasAgeRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Rating">
+        <onto:IsHaving rdf:resource="http://www.pharmacology.com/onto#Rating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#SYRUP_Benadryl -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#SYRUP_Benadryl">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#SYRUP"/>
+        <onto:IsUsedIn rdf:resource="http://www.pharmacology.com/onto#Symptom2"/>
+        <onto:hasAgeRange rdf:resource="http://www.pharmacology.com/onto#Adult"/>
+        <onto:hasRating rdf:resource="http://www.pharmacology.com/onto#5Rating"/>
+        <onto:salesIn rdf:resource="http://www.pharmacology.com/onto#CarrintonPharmacy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#Paracetamol"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fever</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom2">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#SYRUP_Benadryl"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coughing</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom3">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#Brufen"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Headache</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom4">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#Cetrizine"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sneezing</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom5">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#Doxil"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumors</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom6">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:IsTreatedBy rdf:resource="http://www.pharmacology.com/onto#Brufen"/>
+        <onto:SymptomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</onto:SymptomId>
+        <onto:SymptomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Illness</onto:SymptomName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Symptom7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Symptom7">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+        <onto:TreatedBy rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+        <onto:hasSymptom rdf:resource="http://www.pharmacology.com/onto#DrySkin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#TABLET -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#TABLET">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#Teenager -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#Teenager"/>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#pharma_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#pharma_1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+        <onto:sales rdf:resource="http://www.pharmacology.com/onto#Paracetamol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#shortsightedness -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#shortsightedness">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#type1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#type1">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+        <onto:IsTypeOf rdf:resource="http://www.pharmacology.com/onto#shortsightedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#type2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#type2">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#0Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#0Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#1Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#1Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#2Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#2Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#3Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#3Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#4Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#4Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmacology.com/onto#5Rating -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmacology.com/onto#5Rating">
+        <rdf:type rdf:resource="http://www.pharmacology.com/onto#Review"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.pharmacologyexample.com#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.pharmacologyexample.com#D">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.pharmacologyexample.com#P">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.pharmacologyexample.com#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.pharmacologyexample.com#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Disease"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.pharmacology.com/onto#hasSymptom"/>
+                                <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#d"/>
+                                <swrl:argument2 rdf:resource="http://www.pharmacology.com/onto#DrySkin"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Cancer"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Eyesight"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#D"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.pharmacology.com/onto#IsTypeOf"/>
+                                <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#D"/>
+                                <swrl:argument2 rdf:resource="http://www.pharmacology.com/onto#shortsightedness"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#shortsightedness"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#D"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Pharmacy"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.pharmacology.com/onto#sales"/>
+                                <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                                <swrl:argument2 rdf:resource="http://www.pharmacology.com/onto#Paracetamol"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#CarrintonPharmacy"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Symptom"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.pharmacology.com/onto#TreatedBy"/>
+                                <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#s"/>
+                                <swrl:argument2 rdf:resource="http://www.pharmacology.com/onto#TABLET"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#coughing"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.pharmacology.com/onto#hasAgeRange"/>
+                                <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                                <swrl:argument2 rdf:resource="http://www.pharmacologyexample.com#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.pharmacologyexample.com#n"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.pharmacology.com/onto#Adult"/>
+                        <swrl:argument1 rdf:resource="http://www.pharmacologyexample.com#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
